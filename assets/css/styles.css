@@ -1,12 +1,23 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
 
-    margin: 0;
-    padding: 20px;
-    background-image: url("/assets/img/ultimosMovimientos.jpg");
 
-    
+    background-image: url("/assets/img/ultimosMovimientos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
 }
+
 main {
     background-color: #3a4475;
 }
@@ -15,20 +26,21 @@ header {
     background-color: #1305d2e2;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
-  
+
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;  
+    display: flex;
 }
 
 nav ul li {
     margin-right: 20px;
 }
+
 nav ul li:last-child {
     margin-right: 0;
 }
@@ -55,50 +67,50 @@ nav a:hover {
 
 /*Haciendo la página Responsive*/
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1700px) {
 
-    .container__cover{
+    .container__cover {
         background-position: 50%;
     }
 
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 
-    header{
+    header {
         padding: 40px;
     }
 
-    .container__cover{
+    .container__cover {
         background-position: -100px;
     }
 
-    .container__cover .svg img{
+    .container__cover .svg img {
         width: 500px;
     }
 
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px) {
 
-    .container__cover{
+    .container__cover {
         background-image: url("");
         background-color: #FD8986;
     }
 
-    .container__cover .svg img{
+    .container__cover .svg img {
         display: none;
     }
 
-    .container__cover .text{
+    .container__cover .text {
         max-width: 600px;
     }
 
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
 
-    .menu nav{
+    .menu nav {
         position: fixed;
         top: 0;
         right: -250px;
@@ -111,12 +123,10 @@ nav a:hover {
     }
 }
 
-.menu nav img{
+.menu nav img {
     display: none;
 }
 
-.menu nav img{
+.menu nav img {
     display: none;
 }
-/* * /
-
